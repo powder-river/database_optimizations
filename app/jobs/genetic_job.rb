@@ -1,7 +1,8 @@
 class GeneticJob < ActiveJob::Base
   queue_as :default
 
-  def perform(*args)
-    # Do something later
+  def perform(name, email, login)
+    
+
   end
 end

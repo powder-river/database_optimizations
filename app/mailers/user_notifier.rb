@@ -1,4 +1,8 @@
+require 'mailgun'
 class UserNotifier < ApplicationMailer
+
+
+
   def send_signup_email(user)
     @user = user
 
@@ -8,4 +12,7 @@ class UserNotifier < ApplicationMailer
   def send_an_email(email)
     mail(to: email, subject: "A test")
   end
+
+
+
 end

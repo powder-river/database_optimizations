@@ -20,11 +20,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.mailgun.org',
   port:                 587,
-  domain:               'example.com',
-  user_name:            'dadkisso@gmail.com',
-  password:             "#{ENV["GMAIL_PASS"]}",
+  domain:               'potatomasters.com',
+  user_name:            'danai@sandboxfd34b95795544986a08fd714e5358127.mailgun.org',
+  password:             "vc005129",
   authentication:       'plain',
   enable_starttls_auto: true  }
 
