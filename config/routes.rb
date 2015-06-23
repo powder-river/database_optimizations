@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   get 'reports/all_data'
 
   # The priority is based upon order of creation: first created -> highest priority.
