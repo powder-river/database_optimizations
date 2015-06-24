@@ -14,4 +14,6 @@ class ReportsController < ApplicationController
     end
   end
 
+
+
 # Sequence.where(assembly_id: Assembly.where(name: params[:name]))
