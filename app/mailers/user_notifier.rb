@@ -12,6 +12,11 @@ class UserNotifier < ApplicationMailer
     mail(to: email, subject: "A test")
   end
 
+  def send_page_load(user)
+    @user = user
+    mail(to: @user.email, subject: "Welcome to the Thunderdome!")
+  end
+
 
 
 end
