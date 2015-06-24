@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+  
   end
 
   # GET /users/1
@@ -29,7 +30,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         UserNotifier.send_signup_email(@user).deliver_now
-        format.html { redirect_to '/reports', notice: 'User was successfully created.' }
+        format.html { redirect_to reports_all_data_path(name: "a2"), notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
