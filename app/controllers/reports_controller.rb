@@ -1,6 +1,7 @@
 class ReportsController < ApplicationController
 
     def all_data
+      
       @assembly = Assembly.find_by_name(params[:name])
       @hits = []
       @assembly.sequences.each do |s|

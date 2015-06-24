@@ -24,7 +24,7 @@ Rails.application.configure do
   port:                 587,
   domain:               'potatomasters.com',
   user_name:            'danai@sandboxfd34b95795544986a08fd714e5358127.mailgun.org',
-  password:             'potato',
+  password:             ENV["MAILGUN_PASS"],
   authentication:       'plain',
   enable_starttls_auto: true  }
 

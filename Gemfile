@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'mail'
 gem 'sendgrid-ruby'
 gem 'mailgun'
-
+gem 'whenever', :require => false
 gem 'daemons'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
